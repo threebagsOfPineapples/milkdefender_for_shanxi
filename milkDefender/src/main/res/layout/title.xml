@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink" >
+     
+    <ImageView        
+        android:id="@+id/title_button"                  
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/skin_tabbar_icon_set" />
+	
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_centerVertical="true"        
+        android:orientation="horizontal" 
+        android:padding="5dp">
+        <ImageView
+            android:id="@+id/title_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/skin_tabbar_icon_name" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/title_text"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+ <!--  待解决textView drawable 图像大小 
+  <TextView 
+       android:id="@+id/title_tv"
+       android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="@string/title_text"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/skin_tabbar_icon_name" 
+            android:drawablePadding="20dp"
+      />
+  
+  -->
+  
+</RelativeLayout>

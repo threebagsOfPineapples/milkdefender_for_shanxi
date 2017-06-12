@@ -1,0 +1,18 @@
+<resources>    <!-- Default screen margins, per the Android Design guidelines. -->    <dimen name="activity_horizontal_margin">29.92dp</dimen>
+    <dimen name="activity_vertical_margin">29.92dp</dimen>
+    <!-- padding -->    <dimen name="padding_svprogresshuddefault">28.05dp</dimen>
+    <!-- 窗口最小宽度 -->    <dimen name="size_minwidth_svprogresshuddefault">224.4dp</dimen>
+    <!-- 图片宽高 -->    <dimen name="size_image_bigloading">149.60000000000002dp</dimen>
+    <!-- 图片宽高 -->    <dimen name="size_image_smallloading">112.2dp</dimen>
+    <!-- 圆角 -->    <dimen name="radius_svprogresshuddefault">46.75px</dimen>
+    <!-- 提示的文字大小 -->    <dimen name="textSize_svprogresshuddefault_msg">28.05sp</dimen>
+    <dimen name="margintop_svprogresshuddefault_msg">18.700000000000003dp</dimen>
+    <dimen name="spot_size">11.22dp</dimen>
+    <dimen name="title_margin">18.700000000000003dp</dimen>
+    <dimen name="progress_margin">44.88dp</dimen>
+    <dimen name="progress_width">467.5dp</dimen>
+    <!-- 检测页面圈圈的大小  /MilkDefender/res/values-->    <dimen name="fragment_detection_circle">224.4dp</dimen>
+    <!-- 检测页面相关 -->      <dimen name="fragment_detection_scan_name">37.400000000000006sp</dimen>
+    <dimen name="fragment_detection_scan_milk">28.05sp</dimen>
+    <dimen name="fragment_detection_result_name">60sp</dimen>
+</resources>

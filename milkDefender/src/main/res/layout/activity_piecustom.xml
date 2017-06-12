@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.magispec.shield.widgets.PieCustomView
+        android:id="@+id/nv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="64dp"
+            android:layout_height="46dp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/point3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="26dp"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:id="@+id/ll_11"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/point1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="64dp"
+                android:layout_height="46dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginRight="26dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ll_1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@+id/linearLayout_1"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="15dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/point2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="64dp"
+            android:layout_height="46dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginRight="26dp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/linearLayout_1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv4"
+            android:layout_width="64dp"
+            android:layout_height="46dp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/point4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</RelativeLayout>

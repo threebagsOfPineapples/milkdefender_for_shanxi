@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.magispec.shield"
+    android:versionCode="2"
+    android:versionName="1.0.1" >
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="22" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.VIBRAE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <application
+        android:name="com.magispec.shield.service.BaseApplicaton"
+        android:allowBackup="true"
+        android:allowTaskReparenting="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.magispec.shield.activity.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.magispec.shield.activity.GuideActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.magispec.shield.activity.MainActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/ImageTranslucentTheme" >
+        </activity>
+        <activity
+            android:name="com.magispec.shield.activity.MipcaActivityCapture"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.magispec.shield.ble.DeviceScanActivity"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <service
+            android:name="com.magispec.shield.ble.BluetoothLeService"
+            android:enabled="true" >
+        </service>
+
+        <activity
+            android:name="org.achartengine.GraphicalActivity"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.magispec.shield.activity.WXLoginActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.magispec.shield.activity.HelpActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/ImageTranslucentTheme"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.magispec.shield.activity.TellUsActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/ImageTranslucentTheme" >
+        </activity>
+        <activity
+            android:name="com.magispec.shield.activity.AboutActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/ImageTranslucentTheme" >
+        </activity>
+        <activity
+            android:name="com.magispec.shield.activity.OADActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/ImageTranslucentTheme" >
+        </activity>
+        <activity
+            android:name="com.magispec.shield.wxapi.WXEntryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" >
+                </action>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.magispec.shield.activity.PieActicity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.magispec.shield.activity.PieCustomActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity android:name="com.magispec.shield.activity.CategoryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="nosensor"/>
+        <activity 
+            android:name="com.magispec.shield.activity.WebActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="nosensor" 
+             android:theme="@style/ImageTranslucentTheme"
+            ></activity>
+
+        <service android:name="com.amap.api.location.APSService" >
+        </service>
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="4e7578647b738963f8bf2a64627b72aa" />
+    </application>
+</manifest>

@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:fitsSystemWindows="true"
+    android:keepScreenOn="true"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/frame_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="548"
+        android:background="@color/white" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="73"
+        android:background="@drawable/bg_tab_guide"
+        android:orientation="horizontal" >
+
+
+        <LinearLayout
+            android:id="@+id/ll_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/skin_tabbar_icon_home_select" />
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="首页"
+                android:textColor="@color/skin_tabbar_font_color_select" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_record"
+             android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/skin_tabbar_icon_record_select" />
+
+            <TextView
+                 android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="记录"
+                android:textColor="@color/skin_tabbar_font_color_select" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_detection"
+             android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/skin_tabbar_icon_detection_select" />
+
+            <TextView
+                 android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="检测"
+                android:textColor="@color/skin_tabbar_font_color_select" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_discovery"
+             android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/skin_tabbar_icon_discovery_select" />
+
+            <TextView
+                 android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="发现"
+                android:textColor="@color/skin_tabbar_font_color_select" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_auth"
+             android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/skin_tabbar_icon_auth_select" />
+
+            <TextView
+                 android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="我的"
+                android:textColor="@color/skin_tabbar_font_color_select" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

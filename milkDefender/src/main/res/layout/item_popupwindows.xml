@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+         xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/item_popupwindows_time"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/btn_selector"
+                android:text="@string/aboutActivity_textView_workingHours"
+                android:textColor="#585858"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+		android:background="@color/whiteSmoke"    
+	    />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/item_popupwindows_call"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/btn_selector"
+                android:textColor="#585858"
+                android:textSize="18sp"
+                android:text="@string/aboutActivity_textView_call" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#f3f3f3" />
+
+        <Button
+            android:id="@+id/item_popupwindows_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/btn_selector"
+            android:textColor="#585858"
+            android:textSize="18sp"
+            android:text="@string/aboutActivity_textView_cancle" />
+    </LinearLayout>
+

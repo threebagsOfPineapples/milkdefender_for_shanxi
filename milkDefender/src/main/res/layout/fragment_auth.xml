@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/pink" >
+
+            <com.magispec.shield.widgets.CircleImageView
+                android:id="@+id/fragment_auth_imageView_icon_wx"
+                android:layout_marginStart="20dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                app:civ_border_width="2dp"
+                 app:civ_border_color="@color/white" 
+                android:background="@drawable/bg_auth_icon"
+                 />
+            <TextView
+                android:layout_marginStart="5dp"
+                android:id="@+id/fragment_auth_wxName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/fragment_auth_imageView_icon_wx"
+                android:text="@string/fragment_auth_textView_tourist"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/white_smoke" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_auth_RL_myDevice"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_selector" >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/forward_right_arrow" />
+
+            <ImageView
+                android:id="@+id/iv_icon_mydevice"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/bg_icon_mydevice" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/iv_icon_mydevice"
+                android:padding="10dp"
+                android:text="@string/fragment_auth_textView_myDevice" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_auth_RL_DarkBackground"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_selector" >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/forward_right_arrow" />
+
+            <ImageView
+                android:id="@+id/iv_icon_dark"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/bg_icon_dark_ref" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/iv_icon_dark"
+                android:layout_centerVertical="true"               
+                android:padding="10dp"
+                android:text="@string/fragment_auth_textView_DarkBackground" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+         <RelativeLayout
+            android:id="@+id/fragment_auth_RL_Time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_selector" >
+
+            <ImageView
+                android:id="@+id/time_arrow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/forward_right_arrow" />
+
+            <ImageView
+                android:id="@+id/iv_icon_time"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/bg_icon_calibartiontime" />
+
+            <TextView
+              
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/iv_icon_time"
+                android:layout_centerVertical="true"               
+                android:padding="10dp"
+                android:text="@string/fragment_auth_textView_CalibartionTime" />
+
+            <TextView
+                android:id="@+id/tv_fragment_detection_time"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignTop="@+id/iv_icon_time"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:layout_toStartOf="@+id/time_arrow"
+                android:text="未设置" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+        
+	
+        <RelativeLayout
+            android:id="@+id/fragment_auth_RL_fw_version"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_selector" >
+
+            <ImageView
+                android:id="@+id/activity_setting_iv_fw"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/forward_right_arrow" />
+
+            <TextView
+                android:id="@+id/tv_fw_version"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/activity_setting_iv_fw"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/littleblack"
+                android:textSize="12sp" />
+            <ImageView
+                android:id="@+id/iv_icon_fw"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/bg_icon_fw" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_toEndOf="@+id/iv_icon_fw"
+                android:layout_centerVertical="true"             
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/fragment_auth_textView_fw_version" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_auth_RL_upDate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_selector" >
+			
+            
+            
+            
+            
+            <ImageView
+                android:id="@+id/app_version_arrow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/forward_right_arrow" />
+            <ImageView 
+                android:id="@+id/app_version_new"
+			   android:layout_width="35dp"
+                android:layout_height="10dp"  
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/app_version_arrow"
+			    android:src="@drawable/bg_icon_new"
+			    android:visibility="gone"
+			    android:layout_marginEnd="5dp"
+			    />
+            <TextView
+                android:id="@+id/tv_update"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:text=""
+                android:textColor="@color/littleblack" />
+            <ImageView
+                android:id="@+id/iv_icon_update"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/bg_icon_update" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_toEndOf="@+id/iv_icon_update"
+                android:layout_centerVertical="true"
+                
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/fragment_auth_textView_update" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/whiteSmoke" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_auth_RL_welcomePage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_selector" >
+
+            <TextView
+                android:id="@+id/tv_welcoemPage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+               android:layout_toEndOf="@+id/iv_icon_guide"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/fragment_auth_textView_welcomePage" />
+			<ImageView
+                android:id="@+id/iv_icon_guide"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/bg_icon_guide" />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/forward_right_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_auth_RL_help"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_selector" >
+
+            <TextView
+                android:id="@+id/tv_help"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+               android:layout_toEndOf="@+id/iv_icon_help"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/fragment_auth_textView_helpPage" />
+	
+            <ImageView
+                android:id="@+id/iv_icon_help"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/bg_icon_help" />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/forward_right_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_auth_RL_tellUs"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_selector" >
+			<ImageView
+                android:id="@+id/iv_icon_tellus"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/bg_icon_tellus" />
+            
+            <TextView
+                android:id="@+id/tv_tellus"
+                android:layout_toEndOf="@+id/iv_icon_tellus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"               
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/fragment_auth_textView_tellUs" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/forward_right_arrow" />
+        </RelativeLayout>
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+        <RelativeLayout
+            android:id="@+id/fragment_auth_RL_about"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_selector" >
+			<ImageView
+                android:id="@+id/iv_icon_about"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/bg_icon_about" />
+            
+            <TextView
+                android:id="@+id/tv_about"
+                android:layout_toEndOf="@+id/iv_icon_about"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"               
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/fragment_auth_textView_about" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/forward_right_arrow" />
+        </RelativeLayout>
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/whiteSmoke" />
+         <Button
+             android:id="@+id/fragment_auth_btn_exit"
+             android:layout_width="match_parent"
+             android:layout_height="40dp"
+             android:layout_marginEnd="30dp"
+             android:layout_marginStart="30dp"
+             android:background="@drawable/btn_sumbit_selector"
+            
+             android:text="@string/wxExit"
+             android:textColor="@color/white" />
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whiteSmoke" />
+
+    </LinearLayout>
+   
+    
+    
+    
+</ScrollView>

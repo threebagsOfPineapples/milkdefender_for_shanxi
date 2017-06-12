@@ -1,0 +1,62 @@
+{
+    "classcount": 3,
+    "class_1": {
+        "name": "农产品",
+        "modeltype": "0",
+        "subclasscount": 2,
+        "subclass_1": {
+            "name": "茶叶",
+            "photourl": "http://123.56.229.50/download/project-res/milkdefender/discover_content/photo/milkchecker_learning.jpg",
+            "modleid": "1",
+            "modelobjectdesc": "产地",
+            "modelobjectcount": 2,
+            "modelobject_1": {
+                "id": "1",
+                "name": "南昌"
+            },
+            "modelobject_2": {
+                "id": "2",
+                "name": "合肥"
+            }
+        },
+        "subclass_2": {
+            "name": "大米",
+            "photourl": "http://123.56.229.50/download/project-res/milkdefender/discover_content/photo/supportmilk.jpg",
+            "modleid": "2",
+            "modelobjectdesc": "产地",
+            "modelobjectcount": 1,
+            "modelobject_1": {
+                "id": "1",
+                "name": "南昌"
+            }
+        }
+    },
+    "class_2": {
+        "name": "中药",
+        "modeltype": "0",
+        "subclasscount": 1,
+        "subclass_1": {
+            "name": "金银花",
+            "photourl": "http://123.56.229.50/download/project-res/milkdefender/discover_content/photo/supportmilk.jpg",
+            "modleid": "1",
+            "modelobjectdesc": "产地",
+            "modelobjectcount": 1,
+            "modelobject_1": {
+                "id": "1",
+                "name": "南昌"
+            }
+        }
+    },
+    "class_3": {
+        "name": "毒品",
+        "modeltype": "1",
+        "subclasscount": 1,
+        "subclass_1": {
+            "name": "冰毒",
+            "photourl": "..........",
+            "modleid": "1",
+            "modelobjectdesc": "",
+            "modelobjectcount": 0
+        }
+    }
+}

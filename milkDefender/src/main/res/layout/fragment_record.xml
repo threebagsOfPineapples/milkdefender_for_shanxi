@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+    android:id="@+id/title_main"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="@color/pink" >
+	
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <ImageView          
+            android:id="@+id/title_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/skin_tabbar_icon_name" />
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/title_text"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:gravity="center"
+        android:textColor="#b9baba"
+        android:textSize="40dp"
+        android:layout_gravity="center_vertical"
+        android:text="暂未开放"/>
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/fragment_record_ll_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="21"
+            android:orientation="vertical"
+             >
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/pull_refresh_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:listSelector="#00000000"
+                android:scrollbars="none" 
+                >
+            </com.handmark.pulltorefresh.library.PullToRefreshListView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fragment_record_ll_itemDetails"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="21"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+               android:gravity="center"
+               android:layout_gravity="center"
+                android:layout_weight="3"
+                android:text="测试详情"
+                android:textSize="20sp"
+                android:textColor="@color/pink"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight="15"
+                android:background="@drawable/fragment_record_corner"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_fragment_record_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.9"
+                        android:gravity="center"
+                        android:padding="9dp"
+                        android:src="@drawable/fragment_record_icon_itemdetails_testgoodname" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="3.5"
+                        android:text="@string/fragment_record_itemDetails_scanGoodName" />
+
+                    <TextView
+                        android:id="@+id/fragment_record_itemDetails_scanName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="5.5"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="9dp"
+                        android:src="@drawable/fragment_record_itemdetails_scancode" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="3.5"
+                        android:singleLine="true"
+                        android:text="@string/fragment_record_itemDetails_testGoodName" />
+
+                    <TextView
+                        android:id="@+id/fragment_record_itemDetails_testGoodName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="5.5"
+                        android:singleLine="true"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="9dp"
+                        android:src="@drawable/fragment_record_icon_itemdetails_testtime" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="3.5"
+                        android:text="@string/fragment_record_itemDetails_testTime" />
+
+                    <TextView
+                        android:id="@+id/fragment_record_itemDetails_testTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="5.5"
+                        android:ellipsize="end"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="9dp"
+                        android:src="@drawable/fragment_record_icon_itemdetails_testresult" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="3.5"
+                        android:singleLine="true"            			
+                        android:text="@string/fragment_record_itemDetails_testResult" />
+
+                    <ImageView
+                        android:id="@+id/fragment_record_itemDetails_testResult"
+                        android:layout_width="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5.5" 
+                        android:layout_gravity="center"
+                        android:singleLine="true"
+            			/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal" >
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="9dp"
+                        android:src="@drawable/fragment_record_icon_itemdetails_testposition" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="3.5"
+                        android:singleLine="true"            			
+                        android:text="@string/fragment_record_itemDetails_testPosition" />
+
+                    <TextView
+                        android:id="@+id/fragment_record_itemDetails_testPosition"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="5.5" 
+                        android:singleLine="true"
+            			 android:ellipsize="end"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="3" >
+
+                <ImageView
+                    android:id="@+id/fragment_record_item_details_previous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/bg_fragment_record_item_details_previous" />
+
+                <ImageView
+                    android:id="@+id/fragment_record_item_details_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/bg_fragment_record_item_details_back" />
+
+                <ImageView
+                    android:id="@+id/fragment_record_item_details_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/bg_fragment_record_item_details_next" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="4" />
+        </LinearLayout>
+    </LinearLayout>
+-->
+</LinearLayout>

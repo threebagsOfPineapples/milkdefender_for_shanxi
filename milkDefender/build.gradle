@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        magispec {
+            keyAlias 'magispec'
+            keyPassword '11qqaazz'
+            storeFile file('D:/奶粉卫士项目/key文件/Magispec')
+            storePassword '11qqaazz'
+        }
+    }
+
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.magispec.shield"
+        minSdkVersion 19
+        targetSdkVersion 22
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+    }
+    buildTypes {
+        release {
+
+            signingConfig signingConfigs.magispec
+        }
+        debug {
+            signingConfig signingConfigs.magispec
+        }
+    }
+    aaptOptions
+            {
+                cruncherEnabled = false
+            }
+}
+
+dependencies {
+    compile project(':library')
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.google.code.gson:gson:2.2.1'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile files('libs/achartengine-1.1.0.jar')
+    compile files('libs/AMap_Location_v2.3.0_20160112.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/libsvm.jar')
+    compile files('libs/locSDK_6.13.jar')
+    compile files('libs/mpandroidchartlibrary-2-2-4.jar')
+    compile files('libs/mpermissions.jar')
+    compile files('libs/okhttp-3.2.0.jar')
+    compile files('libs/okhttputils-2_3_8.jar')
+    compile files('libs/okio-1.6.0.jar')
+    compile files('libs/picasso-2.5.2.jar')
+    compile files('libs/systembartint-1.0.4.jar')
+    compile files('libs/volley.jar')
+    compile files('libs/xutils-3.3.25.jar')
+    compile files('libs/zxing.jar')
+    compile 'com.zhy:flowlayout-lib:1.0.3'
+    compile 'com.zhy:autolayout:1.4.3'
+}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">光盾研发版</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="label_data" translatable="false">Data:</string>
+    <string name="label_device_address" translatable="false">Device address:</string>
+    <string name="label_state" translatable="false">State:</string>
+    <string name="no_data" translatable="false">No data</string>
+    <string name="connected" translatable="false">Connected</string>
+    <string name="disconnected" translatable="false">Disconnected</string>
+    <string name="title_devices" translatable="false">搜索BLE设备</string>
+    <string name="error_bluetooth_not_supported" translatable="false">Bluetooth not supported.</string>
+    <string name="unknown_device" translatable="false">Unknown device</string>
+    <string name="unknown_characteristic" translatable="false">Unknown characteristic</string>
+    <string name="unknown_service" translatable="false">Unknown service</string>
+    <!-- Menu items -->
+    <string name="menu_connect" translatable="false">Connect</string>
+    <string name="menu_disconnect" translatable="false">Disconnect</string>
+    <string name="menu_scan" translatable="false">搜索</string>
+    <string name="menu_stop" translatable="false">Stop</string>
+    <string name="skin_tabbar_icon_home" translatable="false">首页</string>
+    <string name="skin_tabbar_icon_record" translatable="false">记录</string>
+    <string name="skin_tabbar_icon_detection" translatable="false">检测</string>
+    <string name="ble_not_supported" translatable="false">不支持BLE</string>
+    <string name="skin_tabbar_icon_auth" translatable="false">个人中心</string>
+    <string name="skin_tabbar_icon_discovery" translatable="false">发现</string>
+    <string name="title_text" translatable="false">光盾研发版</string>
+    <string name="title_setting_text" translatable="false">设置</string>
+    <!-- 首页欢迎页 -->
+    <string name="title_help_text" translatable="false">使用帮助</string>
+    <string name="title_tellus_text" translatable="false">意见反馈</string>
+    <string name="title_fw_version" translatable="false">固件版本</string>
+    <string name="title_help_tellus" translatable="false"></string>
+    <string name="home_button2" translatable="false">添加奶粉</string>
+    <string name="home_button3" translatable="false">在线测量</string>
+    <string name="activity_wxlogion_button_logion" translatable="false">使用微信账号快速登录</string>
+    <string name="fragment_home_textView1" translatable="false">(1)</string>
+    <string name="fragment_home_textView_deviceName" translatable="false">奶粉卫士 S1A</string>
+    <string name="fragment_home_textView3" translatable="false">点击可进入"条码"页面</string>
+    <string name="fragment_home_textView2" translatable="false">(2)</string>
+    <string name="fragment_home_textView4" translatable="false">点击可进入"检测"页面</string>
+    <string name="fragment_home_textView_phone" translatable="false">电话  : </string>
+    <string name="fragment_home_textView_record" translatable="false">记录</string>
+    <string name="fragment_home_textView_discovery" translatable="false">发现</string>
+    <string name="fragment_home_textView_detection" translatable="false">检测</string>
+    <string name="fragment_detection_tv_scanMilkBrand" translatable="false">目标奶粉</string>
+    <string name="fragment_detection_textView_result" translatable="false">检测结果</string>
+    <string name="fragment_detection_textView_test" translatable="false">诺优能婴幼儿奶粉1段    800g/罐</string>
+    <string name="fragment_detection_textView_hasQuestion" translatable="false">测试不准确？</string>
+    <string name="fragment_record_itemDetails_scanGoodName" translatable="false">扫描物品名称</string>
+    <string name="fragment_record_itemDetails_testGoodName" translatable="false">条形码</string>
+    <string name="fragment_record_itemDetails_testTime" translatable="false">测试时间</string>
+    <string name="fragment_record_itemDetails_testResult" translatable="false">匹配度</string>
+    <string name="fragment_record_itemDetails_testPosition" translatable="false">测试地点</string>
+    <string name="fragment_home_textView_auth" translatable="false">个人</string>
+    <string name="aboutActivity_textView_appName" translatable="false">奶粉卫士</string>
+    <string name="aboutActivity_textView_appVersion" translatable="false">版本号：2.0.5</string>
+    <string name="oadActivity_textView_fw_update" translatable="false">固件升级</string>
+    <string name="oadActivity_textView_fw_update_notice" translatable="false">升级中请勿让奶粉卫士远离手机</string>
+    <string name="fragment_home_textView_wx" translatable="false">微信  :</string>
+    <string name="fragment_home_textView_wx_number" translatable="false">谱芸科技公众号</string>
+    <string name="fragment_home_add_equipment" translatable="false">点击此处添加设备</string>
+    <string name="fragment_home_equipment_connected" translatable="false">已连接设备</string>
+    <string name="fragment_home_connecting_equipment" translatable="false">正在连接...</string>
+    <string name="scan_text" translatable="false">奶粉罐（盒）条码</string>
+    <string name="fragment_detection_textView_milk" translatable="false">奶粉品牌</string>
+    <string name="fragment_detection_textView_detectionResult" translatable="false">检测结果</string>
+    <string name="activity_setting_textView_network" translatable="false">网络连接</string>
+    <string name="activity_setting_textView_wifi" translatable="false">WiFi网路</string>
+    <string name="activity_setting_textView_blueToolth" translatable="false">蓝牙连线</string>
+    <string name="activity_setting_textView_MONET" translatable="false">移动网路</string>
+    <string name="fragment_auth_wxName" translatable="false">谱芸科技</string>
+    <string name="fragment_auth_wxNumber" translatable="false">微信号：magispec</string>
+    <string name="fragment_auth_babyName" translatable="false">姓名</string>
+    <string name="fragment_auth_babyNickName" translatable="false">别名</string>
+    <string name="fragment_auth_babyBirthDay" translatable="false">生日</string>
+    <string name="activity_setting_textView_account" translatable="false">账号管理</string>
+    <string name="activity_setting_textView_ReferenceCalibration" translatable="false">参照物校准</string>
+    <string name="activity_setting_textView_lastTime" translatable="false">上次使用时间</string>
+    <string name="activity_setting_textView_" translatable="false"></string>
+    <string name="activity_setting_textView_app" translatable="false">APP ：</string>
+    <string name="activity_setting_textView_firmware" translatable="false">固件 ：</string>
+    <string name="activity_about_tv_appVersionName" translatable="false">当前版本</string>
+    <string name="activity_bletest" translatable="false">输入的字数已超过20个！</string>
+    <string name="activity_bletest_null" translatable="false">输入的字数不能为空！</string>
+    <string name="textView_Conclusion" translatable="false">建议再检查奶粉品牌、或重新测试！</string>
+    <string name="textView_Conclusion1" translatable="false">建议重新测试！</string>
+    <string name="MyTestRecord" translatable="false">我的检测记录</string>
+    <string name="wx_babyPhotoNickName" translatable="false">Bunny</string>
+    <string name="wxExit" translatable="false">退出账号</string>
+    <string name="activity_tellus_textview_problemAndOpinion" translatable="false">问题和意见</string>
+    <string name="activity_tellus_editview_problemAndOpinion_hint" translatable="false">请简要描述你的问题和意见(500字内)</string>
+    <string name="activity_tellus_textview_problemPicture" translatable="false">图片(选填，请提供问题截图)</string>
+    <string name="activity_tellus_textview_telephone" translatable="false">联系方式</string>
+    <string name="activity_tellus_editview_telephone_hint" translatable="false">选填，便于我们与你联系</string>
+    <string name="activity_tellus_button_submit" translatable="false">提交</string>
+    <!-- 图片控件分明 -->
+    <string name="fragment_detection_iv_loading" translatable="false">检测时加载动画</string>
+    <string name="fragment_detection_iv_scanMilk" translatable="false">扫描得到的奶粉图片</string>
+    <string name="testMode" translatable="false">Eengineering Mode</string>
+    <string name="openAPP" translatable="false">一键开启</string>
+    <!-- 我的页面相关说明 -->
+    <string name="fragment_auth_textView_myDevice" translatable="false">我的设备</string>
+    <string name="fragment_auth_textView_CalibartionTime" translatable="false">自动校准</string>
+    <string name="fragment_auth_textView_DarkBackground" translatable="false">环境校准</string>
+    <string name="fragment_auth_textView_fw_version" translatable="false">固件版本</string>
+    <string name="fragment_auth_textView_welcomePage" translatable="false">欢迎页</string>
+    <string name="fragment_auth_textView_helpPage" translatable="false">使用帮助</string>
+    <string name="fragment_auth_textView_update" translatable="false">检查更新</string>
+    <string name="fragment_auth_textView_tellUs" translatable="false">意见反馈</string>
+    <string name="fragment_auth_textView_about" translatable="false">关于</string>
+    <string name="fragment_auth_textView_tourist" translatable="false">游客</string>
+    <!-- 关于页面相关说明 -->
+    <string name="aboutActivity_textView_companyName" translatable="false">北京谱芸科技有限责任公司</string>
+    <string name="aboutActivity_textView_call" translatable="false">呼叫: 010–52962389</string>
+    <string name="aboutActivity_textView_phoneNumber" translatable="false">010–52962389</string>
+    <string name="aboutActivity_textView_workingHours" translatable="false">工作时间：每天 9:00–18:30</string>
+    <string name="aboutActivity_textView_serviceHours" translatable="false">服务时间：每天 9:00–18:30</string>
+    <string name="aboutActivity_textView_phone" translatable="false">客服电话：</string>
+    <string name="aboutActivity_textView_cancle" translatable="false">取消</string>
+</resources>

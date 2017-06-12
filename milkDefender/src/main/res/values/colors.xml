@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="spots_dialog_color">#E458A1</color>
+    <color name="skin_tabbar_bg">#FCF8FC</color>
+    <color name="darkgray">#808080</color>
+    <color name="gray_line">#b2b2b2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#0000FF</color>
+    <color name="lightred">#90FF0000</color>
+    <color name="lightgray">#D3D3D3</color>
+    <color name="gray">#f0f0f0</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="lightblue">#5CACEE</color>
+    <color name="green">#00EC00</color>
+    <color name="black">#FF000000</color>
+    <color name="red">#CC0000</color>
+    <color name="green_drak">#6BB92D</color>
+    <color name="whiteSmoke">#F5F5F5</color>
+    <color name="littlegray1">#E6E6E6</color>
+    <color name="littleblack">#4D4D4D</color>
+    <color name="gray_black">#efeff4</color>
+    <color name="gray_font">#acacac</color>
+    <color name="white_smoke">#f5f5f5</color>
+    <color name="gray_light">#C7C9CA</color>
+    <color name="tran_graylight">#a0f6f6f6</color>
+    <color name="pink">#2abf64</color>
+    <color name="pink_light">#EF91BA</color>
+    <color name="translucent">#e0000000</color>
+    <color name="bg_fragmentHome_dark">#6D6E70</color>
+    <color name="transparent">#00000000</color>
+    <!-- 深灰色背景 -->
+    <color name="bg_fragmentHome_gray">#d5d5d5</color>
+    <!-- 覆盖颜色 -->
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="bgColor_overlay_black">#95000000</color>
+    <!-- 窗口背景颜色 -->
+    <color name="bgColor_svprogressdefaultview">@android:color/white</color>
+    <!-- 标题颜色 -->
+    <color name="textColor_svprogresshuddefault_msg">#000000</color>
+    <color name="roundColor_svprogresshuddefault">#e5e5e5</color>
+    <color name="roundProgressColor_svprogresshuddefault">@android:color/black</color>
+    <!-- 定义状态栏透明 -->
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="red_dark">#C61142</color>
+    <color name="red_light">#F93E70</color>
+    <color name="yellow">#E7CB2C</color>
+    <color name="green_dark">#60AC25</color>
+    <!-- 列表颜色 -->
+    <color name="item_red_dark">#ff3030</color>
+    <color name="item_red_light">#ff6eb4</color>
+     <color name="item_yellow_light">#cdcd00</color>
+      <color name="item_green_light">#3cb371</color>
+    <!-- 导航栏字体颜色 -->  
+    <color name="tab_font_color_black">#333333</color>
+     <color name="tab_font_color_pink">#2abf64</color>
+      
+    <drawable name="tab_font_color_black">#333333</drawable>
+     <drawable name="tab_font_color_pink">#2abf64</drawable>
+      
+    
+
+</resources>
